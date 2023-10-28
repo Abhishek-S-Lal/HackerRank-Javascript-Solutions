@@ -15,18 +15,18 @@ The problem is to calculate the surface area of a 3D structure represented by a 
 
 #### Solution Approach:
   >  In this problem, we have to first calculate the top and bottom surface area, i.e 2 x (W x H). We now have to add the area of the end sides and middle sides. We know that end sides are as follows:
-  - the front end is when i = 0 
-  - the back end is when row = W - 1
-  - the right end is when j = 0
-  - the left end is when j = H - 1
-> 
-And the middle sides are as follows:
-- When i > 0 and i < W - 1
-- When j > 0 and j < H - 1
+ > - the front end is when i = 0 
+ >  - the back end is when row = W - 1
+ > - the right end is when j = 0
+ > - the left end is when j = H - 1
 >
-So, to calculate the end side surface area, we traverse each element of the array, and add the height, i.e A[i][j] to the area variable.
+> And the middle sides are as follows:
+> - When i > 0 and i < W - 1
+> - When j > 0 and j < H - 1
 >
-In the above iteration, we also calculate the area of the all four middle sides(front, back, right and left). For that,we find the differnce in height of the current cell with the height of the previous/next cell and adds it to the area variable. 
+> So, to calculate the end side surface area, we traverse each element of the array, and add the height, i.e A[i][j] to the area variable.
+>
+> In the above iteration, we also calculate the area of the all four middle sides(front, back, right and left). For that,we find the differnce in height of the current cell with the height of the previous/next cell and adds it to the area variable. 
 
 
 #### Sample Input to the function
@@ -55,12 +55,12 @@ In the above iteration, we also calculate the area of the all four middle sides(
 
 #### Solution Approach:
   >  In this problem, we have to first check if k=0, then we can return the original array of first n numbers. 
-  
-  >Since, we want the difference between each number and its position in the list to be exactly 'k, we need to move each number either 'k' positions to the left or 'k' positions to the right. 
-  
-  >So, we need to check if it is divisible by 2*k because if 'n' is not divisible by 2 times 'k', it means there aren't enough numbers to create this special pattern, then we can return [-1]
-
-  >If it's possible, we create a new list where each number is either moved 'k' positions to the left or 'k' positions to the right, so that the difference between each number and its position in the new list is exactly 'k.'Then, we return this new list as the answer.
+  > 
+  > Since, we want the difference between each number and its position in the list to be exactly 'k, we need to move each number either 'k' positions to the left or 'k' positions to the right. 
+  > 
+  > So, we need to check if it is divisible by 2*k because if 'n' is not divisible by 2 times 'k', it means there aren't enough numbers to create this special pattern, then we can return [-1]
+  >
+  > If it's possible, we create a new list where each number is either moved 'k' positions to the left or 'k' positions to the right, so that the difference between each number and its position in the new list is exactly 'k.'Then, we return this new list as the answer.
 
 #### Sample Input to the function
 
@@ -87,12 +87,12 @@ In the above iteration, we also calculate the area of the all four middle sides(
 
 #### Solution Approach:
   >  In this problem, we need to first remove the duplicates and sort it in descending order to obtain unique and ranked leaderboard.Initialize a variable j=uniqueRanked.length - 1, to keep track of our position in the uniqueRanked array. 
-  
-  >For each item in the player's array, we check whether it is greater than the uniqueRanked[j], if yes, we decrement j until we find the right spot.
-
-  >Once we find the right rank, we add 2 to 'j' because the leaderboard is 1-based, and push it to an array.
-  
-  >Finally we return an array containing the ranks for each player in 'playerRanks.'
+  > 
+  > For each item in the player's array, we check whether it is greater than the uniqueRanked[j], if yes, we decrement j until we find the right spot.
+  >
+  > Once we find the right rank, we add 2 to 'j' because the leaderboard is 1-based, and push it to an array.
+  > 
+  > Finally we return an array containing the ranks for each player in 'playerRanks.'
 
 #### Sample Input to the function
 
@@ -119,10 +119,10 @@ In the above iteration, we also calculate the area of the all four middle sides(
 
 #### Solution Approach:
   >  In this problem, we begin with the result set to 1. Then, we iterate through a loop, starting from 1 and continuing up to the given number. During each iteration, we multiply the current result by the value of the iterator. This gradually builds up the factorial value.
-
-  >To handle large integers effectively, we can use a library like BigInt. BigInt allows us to work with arbitrarily large integers, ensuring that we can accurately compute the factorial for numbers that exceed the typical integer range.
-
-  >Once the loop completes, we return the final result as the computed factorial value for the given input number.
+  >
+  > To handle large integers effectively, we can use a library like BigInt. BigInt allows us to work with arbitrarily large integers, ensuring that we can accurately compute the factorial for numbers that exceed the typical integer range.
+  > 
+  > Once the loop completes, we return the final result as the computed factorial value for the given input number.
 
 #### Sample Input to the function
 
@@ -147,9 +147,9 @@ In the above iteration, we also calculate the area of the all four middle sides(
 
 #### Solution Approach:
   >  In this problem, the code starts by calculating the inversion count, which is the number of pairs of elements that are out of order in the array. It uses Array.reduce() and a while loop to compare each element with the elements to its right. If a smaller element is found to the right of a larger one, an inversion is counted.
-
+  >
   > After calculating the inversion count, the code checks whether this count is even or odd. If the inversion count is even, it returns "YES". If the inversion count is odd, it returns "NO".
-
+  >
   > When we have an even inversion count, it means that there is an even number of pairs of elements where the smaller element comes after the larger one in the array. We can use left rotations to gradually fix these inversions, which is not possible for odd inversion count.
 
 #### Sample Input to the function
