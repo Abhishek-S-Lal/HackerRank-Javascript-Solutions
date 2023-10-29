@@ -165,16 +165,77 @@ YES
 ```
 
 ---
-## 6. Problem B
+## 6. The Time in Words
 
-- [View Problem Statement](https://www.hackerrank.com/challenges/grading/problem?isFullScreen=true)
-- [View Solution](./solution.py) 
+- [View Problem Statement](https://www.hackerrank.com/challenges/the-time-in-words/problem?isFullScreen=false)
+- [View Solution](./Algorithms/Implementations/the-time-in-words.js) 
 
 #### Problem Explanation:
-  In this problem, I created a program that takes input for the number of grades to be entered, and then prompts the user to enter each grade. 
+  The problem is to convert a given time in hours and minutes into words, specifically describing the time using phrases like "quarter past," "half past," "quarter to," and individual minute and hour words.
 
 #### Solution Approach:
-  >  In this problem, I created a program that takes input for the number of grades to be entered, and then prompts the user to enter each grade. 
+  >  The code starts by defining an array named numbers, which holds words for numbers from zero to twenty-nine.
+  >
+  > Next, it checks if the given time's minute is equal to zero. In this case, it returns the hour followed by "o' clock."
+  >
+  > For other times, it constructs the result by considering three possibilities: "half," "quarter," or the number of minutes. It calculates the number of minutes and appends "minute" or "minutes" accordingly. 
+  > 
+  > It also determines whether the time is "past" or "to" the next hour and adjusts the hour accordingly and returns the result.
+
+
+#### Sample Input to the function
+
+```
+7, 15 //h,m
+//h -> the hour of the day
+//m ->  the minutes after the hour
+```
+
+#### Sample Output from the function
+
+```
+quarter past seven //time string as described
+```
+
+---
+## 7. Forming a Magic Square
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/magic-square-forming/problem)
+- [View Solution](./Algorithms/Implementations/magic-square-forming.js) 
+
+#### Problem Explanation:
+  The problem is to find the minimum cost required to convert a given 3 x 3 matrix into a magic square.
+
+#### Solution Approach:
+  >  In this problem, we need to first set up an array of all the 8 possible 3 x 3 magic squares. Then we need to find the cost of conversion of the given matrix to magic square by performing cost += s[i][j] - magicSquare[i][j]. For each of the 8 iterations of the magic squares, save the minimum cost in a variable and return it
+
+#### Sample Input to the function
+
+```
+[[4, 8, 2],
+[4, 5, 7],
+[6, 1, 6]] //2D array 3 x 3 matrix.
+```
+
+#### Sample Output from the function
+
+```
+4 //minimum cost
+```
+
+---
+## 8.Lily's Homework
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/lilys-homework/problem?isFullScreen=false)
+- [View Solution](./Algorithms/Sorting/lilys-homework.js) 
+
+#### Problem Explanation:
+  In Lily's homework problem, the goal is to make an array of distinct integers beautiful by swapping its elements any number of times. An array is considered beautiful when the sum of absolute differences between adjacent elements is minimized. The task is to calculate and return the minimum number of swaps required to achieve this beautiful arrangement.
+
+#### Solution Approach:
+  >  In this problem, we first employs a helper function called minimumSwaps, which sorts a copy of the original array, keeps track of the indices of each element in the sorted array, and iterates through the original array to count swaps required to move elements to their correct positions.
+  >
+  > First, the function calculates the minimum swaps needed to sort the array in ascending order. Then, it creates a reversed the input array and computes the minimum swaps to sort it in descending order. Then the function will return the smaller value by comparing the minimum swaps for both ascending and descending order.
 
 #### Sample Input to the function
 
@@ -191,107 +252,67 @@ YES
 ```
 
 ---
-## 7. Problem C
+## 9. Bigger is Greater
 
-- [View Problem Statement](https://www.hackerrank.com/challenges/grading/problem?isFullScreen=true)
-- [View Solution](./solution.py) 
+- [View Problem Statement](https://www.hackerrank.com/challenges/bigger-is-greater/problem)
+- [View Solution](./Algorithms/Implementations/bigger-is-greater.js) 
 
 #### Problem Explanation:
-  In this problem, I created a program that takes input for the number of grades to be entered, and then prompts the user to enter each grade. 
+  The problem is about finding the lexicographically smallest string that is greater than the given string.
 
 #### Solution Approach:
-  >  In this problem, I created a program that takes input for the number of grades to be entered, and then prompts the user to enter each grade. 
+  > It starts by converting the input string into an array of individual characters
+  >
+  > We need to identify the rightmost character that is not in increasing order from right to left. This character, tracked using the index i, is the first one that can be modified to create a lexicographically greater string. 
+  >
+  >If no such character is found, it means the input string is already the largest possible, and the function returns 'no answer'.
+  >
+  > Once the character at index i is found, the function then searches for the smallest character to the right of it that is larger than the character at position i - 1, marked by the index j. 
+  >
+  >By swapping these characters and reversing the substring to the right of position i - 1, the function constructs the lexicographically smallest greater string possible. It then returns this modified string as the result.
 
 #### Sample Input to the function
 
 ```
-[[1, 3, 4],
-[2, 2, 3],
-[1, 2, 4]] //2D array A denoting height of each cell.
+hefg //w -> a word
 ```
 
 #### Sample Output from the function
 
 ```
-60 //total visible surface area
+hegf //the smallest lexicographically higher string possible
 ```
 
 ---
-## 8. Problem D
+## 10. Common Child
 
-- [View Problem Statement](https://www.hackerrank.com/challenges/grading/problem?isFullScreen=true)
-- [View Solution](./solution.py) 
+- [View Problem Statement](https://www.hackerrank.com/challenges/common-child/problem)
+- [View Solution](./Algorithms/Strings/common-child.js) 
 
 #### Problem Explanation:
-  In this problem, I created a program that takes input for the number of grades to be entered, and then prompts the user to enter each grade. 
+  The problem is to find the length of the longest common subsequence between two strings.
 
 #### Solution Approach:
-  >  In this problem, I created a program that takes input for the number of grades to be entered, and then prompts the user to enter each grade. 
+  > We, first creates a two-dimensional array called dp to store the length of the common child. The dimensions of this array are (n+1) x (m+1), where n and m represent the lengths of the input strings s1 and s2. 
+  >
+  > Then we use nested loops to iterate through both input strings. During each iteration, the function compares the characters at the current positions of the strings. 
+  >
+  > If a match is found, it increments the value in the dp array at the corresponding position by one, effectively extending the length of the common subsequence. 
+  >
+  > If the characters don't match, the function selects the maximum value from either the previous row or the previous column in the dp array. 
+  >
+  > Ultimately, the length of the longest common subsequence is identified in the cell dp[n][m] of the array, and this value is returned as the result of the function.
 
 #### Sample Input to the function
 
 ```
-[[1, 3, 4],
-[2, 2, 3],
-[1, 2, 4]] //2D array A denoting height of each cell.
+HARRY, SALLY //s1, s2
 ```
 
 #### Sample Output from the function
 
 ```
-60 //total visible surface area
-```
-
----
-## 9. Problem E
-
-- [View Problem Statement](https://www.hackerrank.com/challenges/grading/problem?isFullScreen=true)
-- [View Solution](./solution.py) 
-
-#### Problem Explanation:
-  In this problem, I created a program that takes input for the number of grades to be entered, and then prompts the user to enter each grade. 
-
-#### Solution Approach:
-  >  In this problem, I created a program that takes input for the number of grades to be entered, and then prompts the user to enter each grade. 
-
-#### Sample Input to the function
-
-```
-[[1, 3, 4],
-[2, 2, 3],
-[1, 2, 4]] //2D array A denoting height of each cell.
-```
-
-#### Sample Output from the function
-
-```
-60 //total visible surface area
-```
-
----
-## 10. Problem F
-
-- [View Problem Statement](https://www.hackerrank.com/challenges/grading/problem?isFullScreen=true)
-- [View Solution](./solution.py) 
-
-#### Problem Explanation:
-  In this problem, I created a program that takes input for the number of grades to be entered, and then prompts the user to enter each grade. 
-
-#### Solution Approach:
-  >  In this problem, I created a program that takes input for the number of grades to be entered, and then prompts the user to enter each grade. 
-
-#### Sample Input to the function
-
-```
-[[1, 3, 4],
-[2, 2, 3],
-[1, 2, 4]] //2D array A denoting height of each cell.
-```
-
-#### Sample Output from the function
-
-```
-60 //total visible surface area
+2 // length of the longest string which is a common child of the input strings
 ```
 
 ---
