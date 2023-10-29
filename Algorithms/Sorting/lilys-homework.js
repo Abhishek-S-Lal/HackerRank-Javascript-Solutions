@@ -21,11 +21,13 @@ function lilysHomework(arr) {
             if (arr[i] !== sorted[i]) {
                 swaps++;
                 const current = arr[i];
+
                 const correctValue = sorted[i];
                 const correctIndex = indexMap[correctValue];
 
                 arr[i] = correctValue;
                 arr[correctIndex] = current;
+                
                 indexMap[current] = correctIndex;
                 indexMap[correctValue] = i;
             }
