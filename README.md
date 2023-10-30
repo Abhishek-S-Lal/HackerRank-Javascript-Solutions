@@ -2,12 +2,12 @@
 
 > The repository contains the solutions to various HackerRank problems solved using javascript programmming language. Each solution includes a reference to the problem statement and is well-documented to explain the logic and approach. Below you can find the documentation of 10 different problems.
 
-
+## Problems I have solved to reach 20K rank from 50K rank👇
 
 ## 1. 3D Surface Area
 
 
-- [View Problem Statement](https://www.hackerrank.com/challenges/3d-surface-area/problem?isFullScreen=false)
+- [View Problem Statement](https://www.hackerrank.com/challenges/3d-surface-area/problem)
 - [View Solution](./Algorithms/Implementations/3d-surface-area.js) 
 
 #### Problem Explanation:
@@ -47,7 +47,7 @@ The problem is to calculate the surface area of a 3D structure represented by a 
 
 ## 2. Absolute Permutation
 
-- [View Problem Statement](https://www.hackerrank.com/challenges/absolute-permutation/problem?isFullScreen=false)
+- [View Problem Statement](https://www.hackerrank.com/challenges/absolute-permutation/problem)
 - [View Solution](./Algorithms/Implementations/absolute-permutation.js) 
 
 #### Problem Explanation:
@@ -111,7 +111,7 @@ The problem is to calculate the surface area of a 3D structure represented by a 
 ---
 ## 4. Extra Long Factorials
 
-- [View Problem Statement](https://www.hackerrank.com/challenges/extra-long-factorials/problem?isFullScreen=false)
+- [View Problem Statement](https://www.hackerrank.com/challenges/extra-long-factorials/problem)
 - [View Solution](./Algorithms/Implementations/extra-long-factorials.js) 
 
 #### Problem Explanation:
@@ -139,7 +139,7 @@ The problem is to calculate the surface area of a 3D structure represented by a 
 ---
 ## 5. Larry's Array
 
-- [View Problem Statement](https://www.hackerrank.com/challenges/larrys-array/problem?isFullScreen=false)
+- [View Problem Statement](https://www.hackerrank.com/challenges/larrys-array/problem)
 - [View Solution](./Algorithms/Implementations/larrys-array.js) 
 
 #### Problem Explanation:
@@ -167,7 +167,7 @@ YES
 ---
 ## 6. The Time in Words
 
-- [View Problem Statement](https://www.hackerrank.com/challenges/the-time-in-words/problem?isFullScreen=false)
+- [View Problem Statement](https://www.hackerrank.com/challenges/the-time-in-words/problem)
 - [View Solution](./Algorithms/Implementations/the-time-in-words.js) 
 
 #### Problem Explanation:
@@ -224,9 +224,9 @@ quarter past seven //time string as described
 ```
 
 ---
-## 8.Lily's Homework
+## 8. Lily's Homework
 
-- [View Problem Statement](https://www.hackerrank.com/challenges/lilys-homework/problem?isFullScreen=false)
+- [View Problem Statement](https://www.hackerrank.com/challenges/lilys-homework/problem)
 - [View Solution](./Algorithms/Sorting/lilys-homework.js) 
 
 #### Problem Explanation:
@@ -316,3 +316,353 @@ HARRY, SALLY //s1, s2
 ```
 
 ---
+
+## 11. Fraudulent Activity Notifications
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/fraudulent-activity-notifications/problem)
+- [View Solution](./Algorithms/Sorting/fraudulent-activity-notifications.js) 
+
+---
+## 12. Sherlock and Anagrams
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem)
+- [View Solution](./Algorithms/Strings/sherlock-and-anagrams.js) 
+
+---
+## 13. Bear and Steady Gene
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/bear-and-steady-gene/problem)
+- [View Solution](./Algorithms/Strings/bear-and-steady-gene.js) 
+
+---
+## 14. Morgan and a String
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/morgan-and-a-string/problem)
+- [View Solution](./Algorithms/Strings/morgan-and-a-string.js) 
+
+---
+## 15. Almost Sorted
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/almost-sorted/problem)
+- [View Solution](./Algorithms/Implementations/almost-sorted.js) 
+
+---
+## 16. Matrix Layer Rotation
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/matrix-rotation-algo/problem)
+- [View Solution](./Algorithms/Implementations/matrix-rotation-algo.js) 
+
+---
+## 17. Encryption
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/encryption/problem)
+- [View Solution](./Algorithms/Implementations/encryption.js) 
+
+---
+## 18. The Grid Search
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/the-grid-search/problem)
+- [View Solution](./Algorithms/Implementations/the-grid-search.js) 
+
+---
+## Problems I have solved to reach 10K rank from 20K rank👇
+
+## 1. Minimum absolute difference in an array
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/minimum-absolute-difference-in-an-array/problem)
+- [View Solution](./Algorithms/Greedy/minimum-absolute-difference-in-an-array.js) 
+
+#### Problem Explanation:
+  The problem is to find the smallest absolute difference between any two distinct elements in an array.
+
+#### Solution Approach:
+  >  In this problem, we need to first sort the array to find the minimum differnce between adjacent elements. We initialize a variable min to store the minimum value. 
+  >
+  Then, we iterate through the sorted array, starting from the second element (index 1), and for each pair of adjacent elements, we calculate the absolute difference using Math.abs with the previous element. If this calculated difference is smaller than the current min, we update min with the new value. 
+  >
+  > Finally, we return the value of min as the result.
+
+#### Sample Input to the function
+
+```
+[3, -7, 0] //arr
+```
+
+#### Sample Output from the function
+
+```
+3 //the minimum absolute difference found
+```
+
+---
+## 2. Marc's Cakewalk
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/marcs-cakewalk/problem)
+- [View Solution](./Algorithms/Greedy/marcs-cakewalk.js) 
+
+#### Problem Explanation:
+  The problem is to optimize the order in which Marc consumes cupcakes and determine the minimum number of miles Marc must walk while consuming cupcakes with calorie values from an array. The condition is that if Marks eat j cupcakes, he has to walk 2^j * c miles.
+
+#### Solution Approach:
+  >  In this problem, first we need to sort the calorie array in descending order so that Mark consumes the highest calorie cupcakes first. Then a variable is initialized to keep track of the minCalorie.
+  >
+  > Now the array is iterated and for each cupcake, it calculates the calories consumed by given equation and add it to the minCalorie variable.
+  >
+  > Finally, we return the value of minCalorie as the result.
+
+#### Sample Input to the function
+
+```
+[5, 10, 7] //calorie[n]
+```
+
+#### Sample Output from the function
+
+```
+44 //the minimum miles necessary
+```
+
+---
+## 3. Grid Challenge
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/grid-challenge/problem)
+- [View Solution](./Algorithms/Greedy/grid-challenge.js) 
+
+#### Problem Explanation:
+  In this problem we want to check if it's possible to sort rows of a grid in non-decreasing order, with the condition that columns can be rearranged to achieve this, by swapping elements within each column.
+
+#### Solution Approach:
+  >  The solution begins by sorting each row of the grid in lexicographically increasing order, which ensures that the elements within each row are in non-decreasing order. 
+  >
+  >Then, it checks if each column is in lexicographically increasing order by iterating through the columns and rows, comparing the current element with the one above it. 
+  >
+  >If any column violates the non-decreasing order condition, the function returns "NO" 
+  >
+  >If all columns satisfy the condition, the function returns "YES"
+
+#### Sample Input to the function
+
+```
+['ebacd', 'fghij', 'olmkn', 'trpqs', 'xywuv'] //grid[n]
+```
+
+#### Sample Output from the function
+
+```
+YES
+```
+
+---
+## 4. Luck Balance
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/luck-balance/problem)
+- [View Solution](./Algorithms/Greedy/luck-balance.js) 
+
+#### Problem Explanation:
+The task in the Luck Balance problem is to maximize the luck balance by strategically selecting and losing luck through contests. Each contest has an associated luck value, and the player can choose to participate in contests with a positive luck value or lose luck by skipping them. However, there's a constraint on the number of important contests that can be won. The goal is to find the optimal combination of contests to maximize the luck balance while staying within the limit of important contests won.
+
+#### Solution Approach:
+  >  First, we separate important and unimportant contests while summing up the total luck. Then we sorts the important contests in ascending order. >
+  >
+  > Then, we calculates the maximum number of important contests that can be lost without exceeding the allowed number k. 
+  >
+  > We, then use a for loop to iteratively deduct twice the luck from the sorted important contests up to this maximum loss, effectively reducing the total luck. 
+  >
+  >Finally, it returns the updated total luck 
+
+#### Sample Input to the function
+
+```
+3, [[5, 1], [2, 1], [1, 1], [8, 1], [10, 0], [5, 0]] //k, contests
+
+//k ->  the number of important contests Lena can lose
+
+//contests -> a 2D array of integers where each contests[i] contains two integers that represent the luck balance and importance of the i'th contest
+```
+
+#### Sample Output from the function
+
+```
+29 //the maximum luck balance achievable
+```
+
+---
+## 5. Maximum Perimeter Triangle
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/maximum-perimeter-triangle/problem)
+- [View Solution](./Algorithms/Greedy/maximum-perimeter-triangle.js) 
+
+#### Problem Explanation:
+In this problem,  an array of stick lengths is given, and the task is to find and print the lengths of the longest possible side, second-longest possible side, and shortest possible side of a non-degenerate (possible) triangle. If no valid triangle can be built, print -1.
+
+#### Solution Approach:
+  >  We first sorts the sticks in non-decreasing order. Then, we iterates through the sorted sticks, checking if three consecutive sticks can form a valid triangle (satisfying the triangle inequality). 
+  >
+  > If a valid triangle is found with a greater perimeter than the current maximum, it updates the maximum perimeter and stores the triangle's sides.
+  >
+  > If no valid triangle is found, it returns [-1] to indicate that it's impossible to form a triangle with the given sticks.
+
+#### Sample Input to the function
+
+```
+[1, 1, 1, 3, 3] //sticks[n]
+```
+
+#### Sample Output from the function
+
+```
+[1, 3, 3] // the side lengths of the chosen triangle in non-decreasing order or -1
+```
+
+---
+## 6. Candies
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/candies/problem)
+- [View Solution](./Algorithms/Greedy/candies.js) 
+
+---
+## 7. Beautiful Pairs
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/beautiful-pairs/problem)
+- [View Solution](./Algorithms/Greedy/beautiful-pairs.js) 
+
+---
+## 8. Sherlock and The Beast
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/sherlock-and-the-beast/problem)
+- [View Solution](./Algorithms/Greedy/sherlock-and-the-beast.js) 
+
+---
+## 9. Priyanka and Toys
+
+- [View Problem Statement](https://hackerrank.com/challenges/priyanka-and-toys/problem)
+- [View Solution](./Algorithms/Greedy/priyanka-and-toys.js) 
+
+---
+## 10. Largest Permutation
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/largest-permutation/problem)
+- [View Solution](./Algorithms/Greedy/largest-permutation.js) 
+
+---
+## 11. Mark and Toys
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/mark-and-toys/problem)
+- [View Solution](./Algorithms/Greedy/mark-and-toys.js) 
+
+---
+## 12.Greedy Florist
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/greedy-florist/problem)
+- [View Solution](./Algorithms/Greedy/greedy-florist.js) 
+
+---
+## 13. Max Min
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/angry-children/problem)
+- [View Solution](./Algorithms/Greedy/angry-children.js) 
+
+---
+## 14. Jim and the Orders
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/jim-and-the-orders/problem)
+- [View Solution](./Algorithms/Greedy/jim-and-the-orders.js) 
+
+---
+## 15. Permuting Two Arrays
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/two-arrays/problem)
+- [View Solution](./Algorithms/Greedy/two-arrays.js) 
+
+---
+## 16. Game of Stones
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/game-of-stones-1/problem)
+- [View Solution](./Algorithms/Game%20Theory/game-of-stones-1.js) 
+
+---
+## 17. Tower Breakers
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/tower-breakers-1/problem)
+- [View Solution](./Algorithms/Game%20Theory/tower-breakers-1.js) 
+
+---
+## 18. A Chessboard Game
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/a-chessboard-game-1/problem)
+- [View Solution](./Algorithms/Game%20Theory/a-chessboard-game-1.js) 
+
+---
+## 19. Introduction to Nim Game
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/nim-game-1/problem)
+- [View Solution](./Algorithms/Game%20Theory/nim-game-1.js) 
+
+---
+## 20. Misère Nim
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/misere-nim-1/problem)
+- [View Solution](./Algorithms/Game%20Theory/misere-nim-1.js) 
+
+---
+## 21. Nimble Game
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/nimble-game-1/problem)
+- [View Solution](./Algorithms/Game%20Theory/nimble-game-1.js) 
+
+---
+## 22. Alice and Bob's Silly Game
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/alice-and-bobs-silly-game/problem)
+- [View Solution](./Algorithms/Game%20Theory/alice-and-bobs-silly-game.js) 
+
+---
+## 23. Poker Nim
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/poker-nim-1/problem)
+- [View Solution](./Algorithms/Game%20Theory/poker-nim-1.js) 
+
+---
+## 24. A stones game
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/half/problem)
+- [View Solution](./Algorithms/Game%20Theory/half.js) 
+
+---
+## 25. Lonely Integer
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/lonely-integer/problem)
+- [View Solution](./Algorithms/Bit%20Manipulation/lonely-integer.js) 
+
+---
+## 26. Maximizing XOR
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/maximizing-xor/problem)
+- [View Solution](./Algorithms/Bit%20Manipulation/maximizing-xor.js) 
+
+---
+## 27. Sum vs XOR
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/sum-vs-xor/problem)
+- [View Solution](./Algorithms/Bit%20Manipulation/sum-vs-xor.js) 
+
+---
+## 28. Flipping bits
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/flipping-bits/problem)
+- [View Solution](./Algorithms/Bit%20Manipulation/flipping-bits.js) 
+
+---
+## 29. Non-Divisible Subset
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/non-divisible-subset/problem)
+- [View Solution](./Algorithms/Implementations/non-divisible-subset.js) 
+
+---
+## 30. Organizing Containers of Balls
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/organizing-containers-of-balls/problem)
+- [View Solution](./Algorithms/Implementations/organizing-containers-of-balls.js) 
+
+---
+
