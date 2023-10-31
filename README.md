@@ -45,7 +45,67 @@ The problem is to calculate the surface area of a 3D structure represented by a 
 
 ---
 
-## 2. Absolute Permutation
+## 2. Climbing the Leaderboard
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem)
+- [View Solution](./Algorithms/Implementations/climbing-the-leaderboard.js) 
+
+#### Problem Explanation:
+  The problem is to find the rank of a new player after their game, given the scores of players on a leaderboard.
+
+#### Solution Approach:
+  >  In this problem, we need to first remove the duplicates and sort them in descending order to obtain a unique and ranked leaderboard. Initialize a variable j=uniqueRanked.length - 1, to keep track of our position in the uniqueRanked array. 
+  > 
+  > For each item in the player's array, we check whether it is greater than the uniqueRanked[j], if yes, we decrement j until we find the right spot.
+  >
+  > Once we find the right rank, we add 2 to 'j' because the leaderboard is 1-based, and push it to an array.
+  > 
+  > Finally we return an array containing the ranks for each player in 'playerRanks.'
+
+#### Sample Input to the function
+
+```
+[100, 100, 50, 40, 40, 20, 10], [5, 25, 50, 120] //ranked, player
+//ranked[n] -> the leaderboard scores
+//player[m] -> the player's scores
+```
+
+#### Sample Output from the function
+
+```
+[6, 4, 2, 1] //the player's rank after each new score
+```
+---
+
+## 3. Extra Long Factorials
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/extra-long-factorials/problem)
+- [View Solution](./Algorithms/Implementations/extra-long-factorials.js) 
+
+#### Problem Explanation:
+  The problem is to calculate and output the factorial of a large number, typically greater than 20, which may result in very large integers.
+
+#### Solution Approach:
+  >  In this problem, we begin with the result set to 1. Then, we iterate through a loop, starting from 1 and continuing up to the given number. During each iteration, we multiply the current result by the value of the iterator. This gradually builds up the factorial value.
+  >
+  > To handle large integers effectively, we can use a library like BigInt. BigInt allows us to work with arbitrarily large integers, ensuring that we can accurately compute the factorial for numbers that exceed the typical integer range.
+  > 
+  > Once the loop completes, we return the final result as the computed factorial value for the given input number.
+
+#### Sample Input to the function
+
+```
+20 //n -> an integer
+```
+
+#### Sample Output from the function
+
+```
+2432902008176640000 //factorial of 20
+```
+---
+
+## 4. Absolute Permutation
 
 - [View Problem Statement](https://www.hackerrank.com/challenges/absolute-permutation/problem)
 - [View Solution](./Algorithms/Implementations/absolute-permutation.js) 
@@ -77,66 +137,7 @@ The problem is to calculate the surface area of a 3D structure represented by a 
 ```
 
 ---
-## 3. Climbing the Leaderboard
 
-- [View Problem Statement](https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem)
-- [View Solution](./Algorithms/Implementations/climbing-the-leaderboard.js) 
-
-#### Problem Explanation:
-  The problem is to find the rank of a new player after their game, given the scores of players on a leaderboard.
-
-#### Solution Approach:
-  >  In this problem, we need to first remove the duplicates and sort them in descending order to obtain a unique and ranked leaderboard. Initialize a variable j=uniqueRanked.length - 1, to keep track of our position in the uniqueRanked array. 
-  > 
-  > For each item in the player's array, we check whether it is greater than the uniqueRanked[j], if yes, we decrement j until we find the right spot.
-  >
-  > Once we find the right rank, we add 2 to 'j' because the leaderboard is 1-based, and push it to an array.
-  > 
-  > Finally we return an array containing the ranks for each player in 'playerRanks.'
-
-#### Sample Input to the function
-
-```
-[100, 100, 50, 40, 40, 20, 10], [5, 25, 50, 120] //ranked, player
-//ranked[n] -> the leaderboard scores
-//player[m] -> the player's scores
-```
-
-#### Sample Output from the function
-
-```
-[6, 4, 2, 1] //the player's rank after each new score
-```
-
----
-## 4. Extra Long Factorials
-
-- [View Problem Statement](https://www.hackerrank.com/challenges/extra-long-factorials/problem)
-- [View Solution](./Algorithms/Implementations/extra-long-factorials.js) 
-
-#### Problem Explanation:
-  The problem is to calculate and output the factorial of a large number, typically greater than 20, which may result in very large integers.
-
-#### Solution Approach:
-  >  In this problem, we begin with the result set to 1. Then, we iterate through a loop, starting from 1 and continuing up to the given number. During each iteration, we multiply the current result by the value of the iterator. This gradually builds up the factorial value.
-  >
-  > To handle large integers effectively, we can use a library like BigInt. BigInt allows us to work with arbitrarily large integers, ensuring that we can accurately compute the factorial for numbers that exceed the typical integer range.
-  > 
-  > Once the loop completes, we return the final result as the computed factorial value for the given input number.
-
-#### Sample Input to the function
-
-```
-20 //n -> an integer
-```
-
-#### Sample Output from the function
-
-```
-2432902008176640000 //factorial of 20
-```
-
----
 ## 5. Larry's Array
 
 - [View Problem Statement](https://www.hackerrank.com/challenges/larrys-array/problem)
