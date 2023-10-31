@@ -1,6 +1,6 @@
 # HackerRank Javascript Solutions
 
-> The repository contains the solutions to various HackerRank problems solved using javascript programmming language. Each solution includes a reference to the problem statement and is well-documented to explain the logic and approach. Below you can find the documentation of 10 different problems.
+> The repository contains the solutions to various HackerRank problems solved using javascript programmming language. Each solution includes a reference to the problem statement and is well-documented to explain the logic and approach. 
 
 ## Problems I have solved to reach 20K rank from 50K rank👇
 
@@ -11,10 +11,10 @@
 - [View Solution](./Algorithms/Implementations/3d-surface-area.js) 
 
 #### Problem Explanation:
-The problem is to calculate the surface area of a 3D structure represented by a 2D array A, where each element A[i][j] represents the height of a cell in the structure.Given, the board is divided into cells of size 1 x 1.
+The problem is to calculate the surface area of a 3D structure represented by a 2D array A, where each element A[i][j] represents the height of a cell in the structure. Given, the board is divided into cells of size 1 x 1.
 
 #### Solution Approach:
-  >  In this problem, we have to first calculate the top and bottom surface area, i.e 2 x (W x H). We now have to add the area of the end sides and middle sides. We know that end sides are as follows:
+  >  In this problem, we have to first calculate the top and bottom surface area, i.e. 2 x (W x H). We now have to add the area of the end sides and middle sides. We know that the end sides are as follows:
  > - the front end is when i = 0 
  >  - the back end is when row = W - 1
  > - the right end is when j = 0
@@ -24,9 +24,9 @@ The problem is to calculate the surface area of a 3D structure represented by a 
 > - When i > 0 and i < W - 1
 > - When j > 0 and j < H - 1
 >
-> So, to calculate the end side surface area, we traverse each element of the array, and add the height, i.e A[i][j] to the area variable.
+> So, to calculate the end side surface area, we traverse each element of the array, and add the height, i.e. A[i][j] to the area variable.
 >
-> In the above iteration, we also calculate the area of the all four middle sides(front, back, right and left). For that,we find the differnce in height of the current cell with the height of the previous/next cell and adds it to the area variable. 
+> In the above iteration, we also calculate the area of all four middle sides(front, back, right and left). For that, we find the difference in the height of the current cell with the height of the previous/next cell and add it to the area variable. 
 
 
 #### Sample Input to the function
@@ -86,7 +86,7 @@ The problem is to calculate the surface area of a 3D structure represented by a 
   The problem is to find the rank of a new player after their game, given the scores of players on a leaderboard.
 
 #### Solution Approach:
-  >  In this problem, we need to first remove the duplicates and sort it in descending order to obtain unique and ranked leaderboard.Initialize a variable j=uniqueRanked.length - 1, to keep track of our position in the uniqueRanked array. 
+  >  In this problem, we need to first remove the duplicates and sort them in descending order to obtain a unique and ranked leaderboard. Initialize a variable j=uniqueRanked.length - 1, to keep track of our position in the uniqueRanked array. 
   > 
   > For each item in the player's array, we check whether it is greater than the uniqueRanked[j], if yes, we decrement j until we find the right spot.
   >
@@ -150,7 +150,7 @@ The problem is to calculate the surface area of a 3D structure represented by a 
   >
   > After calculating the inversion count, the code checks whether this count is even or odd. If the inversion count is even, it returns "YES". If the inversion count is odd, it returns "NO".
   >
-  > When we have an even inversion count, it means that there is an even number of pairs of elements where the smaller element comes after the larger one in the array. We can use left rotations to gradually fix these inversions, which is not possible for odd inversion count.
+  > When we have an even inversion count, it means that there is an even number of pairs of elements where the smaller element comes after the larger one in the array. We can use left rotations to gradually fix these inversions, which is not possible for an odd inversion count.
 
 #### Sample Input to the function
 
@@ -176,7 +176,7 @@ YES
 #### Solution Approach:
   >  The code starts by defining an array named numbers, which holds words for numbers from zero to twenty-nine.
   >
-  > Next, it checks if the given time's minute is equal to zero. In this case, it returns the hour followed by "o' clock."
+  > Next, it checks if the given time's minute is equal to zero. In this case, it returns the hour followed by "o'clock."
   >
   > For other times, it constructs the result by considering three possibilities: "half," "quarter," or the number of minutes. It calculates the number of minutes and appends "minute" or "minutes" accordingly. 
   > 
