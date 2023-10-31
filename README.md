@@ -11,7 +11,7 @@
 - [View Solution](./Algorithms/Implementations/3d-surface-area.js) 
 
 #### Problem Explanation:
-The problem is to calculate the surface area of a 3D structure represented by a 2D array A, where each element A[i][j] represents the height of a cell in the structure.
+The problem is to calculate the surface area of a 3D structure represented by a 2D array A, where each element A[i][j] represents the height of a cell in the structure.Given, the board is divided into cells of size 1 x 1.
 
 #### Solution Approach:
   >  In this problem, we have to first calculate the top and bottom surface area, i.e 2 x (W x H). We now have to add the area of the end sides and middle sides. We know that end sides are as follows:
