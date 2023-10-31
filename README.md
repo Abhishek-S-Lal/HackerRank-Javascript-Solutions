@@ -2,8 +2,6 @@
 
 > The repository contains the solutions to various HackerRank problems solved using javascript programmming language. Each solution includes a reference to the problem statement and is well-documented to explain the logic and approach. 
 
-## Problems I have solved to reach 20K rank from 50K rank👇
-
 ## 1. 3D Surface Area
 
 
