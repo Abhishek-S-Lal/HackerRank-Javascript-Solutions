@@ -6,9 +6,7 @@
 
 
 - [View Problem Statement](https://www.hackerrank.com/challenges/3d-surface-area/problem)
-- [View OLD Solution](./Algorithms/Implementations/3D%20Surface%20Area/3d-surface-area.js) 
-
-
+- [View OLD Solution](./Algorithms/Implementations/3D%20Surface%20Area/3d-surface-area.js)
 - [View Feedback Received](./Algorithms/Implementations/3D%20Surface%20Area/feedback.md) 
 - [View NEW Solution](./Algorithms/Implementations/3D%20Surface%20Area/3d-surface-area.js) 
 
