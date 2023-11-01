@@ -6,7 +6,11 @@
 
 
 - [View Problem Statement](https://www.hackerrank.com/challenges/3d-surface-area/problem)
-- [View Solution](./Algorithms/Implementations/3D%20Surface%20Area/3d-surface-area.js) 
+- [View OLD Solution](./Algorithms/Implementations/3D%20Surface%20Area/3d-surface-area.js) 
+
+
+- [View Feedback Received](./Algorithms/Implementations/3D%20Surface%20Area/feedback.md) 
+- [View NEW Solution](./Algorithms/Implementations/3D%20Surface%20Area/3d-surface-area.js) 
 
 #### Problem Explanation:
 The problem is to calculate the surface area of a 3D structure represented by a 2D array A, where each element A[i][j] represents the height of the cell in the 3D structure. Given, that the board has H rows and W columns and in each cell, A[i][j] represents the number of cubes of size 1x1x1 placed on it to create the 3 structure.
