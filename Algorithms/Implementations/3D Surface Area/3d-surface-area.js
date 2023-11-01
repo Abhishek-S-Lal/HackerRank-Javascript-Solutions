@@ -5,6 +5,7 @@
  * The function accepts 2D_INTEGER_ARRAY A as parameter.
  */
 
+//The optimal solution can be found in 3d-surface-area-revised file
 function surfaceArea(A) {
     // Write your code here
     const H = A.length; //row length
